@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru" >
+    
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/e94be2cb0e.js" crossorigin="anonymous"></script>
+    <link rel = "icon" href = "images/logo.png" type = "image/png">
+</head>
+<body>
+    
+    <!-- header -->
+    <header class = "header" id = "header">
+        <div class = "head-top">
+            <div class = "site-name">
+                <span>Дружба</span>  
+            </div>
+            <div class = "site-nav">
+                <span id = "nav-btn">МЕНЮ <i class = "fas fa-bars"></i></span>
+            </div>
+        </div>
+
+        <div class = "head-bottom flex">
+            <h2>МИЛЫЙ И КОМФОРТНЫЙ МИНИ-ОТЕЛЬ </h2>
+            <p> Собираясь посетить Черноморский курорт Затока, Дружба станет идеальным выбором для семей, которые любят уютный, дачный отдых в частном секторе. </p>
+            <button type = "button" class = "head-btn">НАЧАТЬ</button>
+        </div>
+    </header>
+    <!-- end of header -->  
+    
+    <!-- side navbar -->
+    <div class = "sidenav" id = "sidenav">
+        <span class = "cancel-btn" id = "cancel-btn">
+            <i class = "fas fa-times"></i>
+        </span>
+
+        <ul class = "navbar">
+            <li><a href = "#header">дружба</a></li>
+            <li><a href = "#services">услуги</a></li>
+            <li><a href = "#rooms">номера</a></li>
+            <li><a href = "#customers">отзывы</a></li>
+        </ul>
+        <button class = "btn sign-up">регистрация</button>
+        <button class = "btn log-in">войти</button>
+    </div>
+    <!-- end of side navbar -->
+
+    <!-- fullscreen modal -->
+    <div id = "modal"></div>
+    <!-- end of fullscreen modal -->
+
+    <!-- body content  -->
+    <section class = "services sec-width" id = "services">
+        <div class = "title">
+            <h2>УСЛУГИ</h2>
+        </div>
+        <div class = "services-container">
+            <!-- single service -->
+            <article class = "service">
+                <div class = "service-icon">
+                    <span>
+                        <i class = "fas fa-utensils"></i>
+                    </span>
+                </div>
+                <div class = "service-content">
+                    <h2>Питание</h2>
+      <p>Имеются две полностью оборудованные кухни для самостоятельного приготовления пищи.</p>              
+    </div>
+</article>
+<!-- end of single service -->
+<!-- single service -->
+<article class = "service">
+    <div class = "service-icon">
+        <span>
+            <i class = "fa fa-wifi"></i>
+        </span>
+    </div>
+    <div class = "service-content">
+        <h2>Wi-Fi Internet</h2>
+        <p>Круглосуточный доступ к беспроводной сети.</p>
+    </div>
+</article>
+<!-- end of single service -->
+ <!-- single service -->
+ <article class = "service">
+    <div class = "service-icon">
+        <span>
+            <i class = "fas fa-parking"></i>
+        </span>
+    </div>
+    <div class = "service-content">
+        <h2>Охраняемая парковка</h2>
+        <p>Ваш транспорт под надежной защитой.</p>
+    </div>
+</article>
+<!-- end of single service -->
+ <!-- single service -->
+ <article class = "service">
+    <div class = "service-icon">
+        <span>
+            <i class = "fas fa-table-tennis"></i>
+        </span>
+    </div>
+    <div class = "service-content">
+        <h2>Спортивная площадка</h2>
+        <p>Прекрасная возможность поддерживать себя в отличной форме. </p>
+    </div>
+</article>
+<!-- end of single service -->
+<!-- single service -->
+<article class = "service">
+    <div class = "service-icon">
+        <span>
+            <i class = "fas fa-camera-retro"></i>
+        </span>
+    </div>
+    <div class = "service-content">
+        <h2>Организация экскурсий</h2>
+        <p>С радостью организуем интересную экскурсию по жемчужинам Черного моря.</p>
+    </div>
+</article>
+<!-- end of single service -->
+</div>
+</section>
+
+<div class = "book">
+    <form class = "book-form">
+        <div class = "form-item">
+            <label for = "checkin-date">Дата заезда: </label>
+            <input type = "date" id = "chekin-date">
+        </div>
+        <div class = "form-item">
+            <label for = "checkout-date">Дата выезда: </label>
+            <input type = "date" id = "chekout-date">
+        </div>
+        <div class = "form-item">
+            <label for = "adult">Взролые: </label>
+            <input type = "number" min = "1" value = "1" id = "adult">
+        </div>
+        <div class = "form-item">
+            <label for = "children">Дети: </label>
+            <input type = "number" min = "1" value = "1" id = "children">
+        </div>
+        <div class = "form-item">
+            <label for = "rooms">Номер: </label>
+            <input type = "number" min = "1" value = "1" id = "rooms">
+        </div>
+        <div class = "form-item">
+            <input type = "submit" class = "btn" value = "забронировать сейчас">
+        </div>
+    </form>
+</div>
+
+<section class = "rooms sec-width" id = "rooms">
+    <div class = "title">
+        <h2>Номера</h2>
+    </div>
+    <div class = "rooms-container">
+        <!-- single room -->
+        <article class = "room">
+            <div class = "room-image">
+                <img src = "images/стандарт 3-м.jpg" alt = "room image">
+            </div> 
+            <div class = "room-text">
+                <h3>Стандарт</h3>
+               <p>Комфортный трёхместный номер на третьем этаже (без балкона).</p>      
+   <p class = "rate">
+    <span>700 грн/ Сутки</span>
+   </p>
+   <button type = "button" class = "btn">бронь</button>
+</div>
+</article>
+<!-- end of single room -->
+<!-- single room -->
+<article class = "room">
+    <div class = "room-image">
+        <img src = "images/люкс без балкона.jpg" alt = "room image">
+    </div>
+    <div class = "room-text">
+        <h3>Комфорт</h3>
+        <p>Уютный четырёхместный номер на третьем этаже (без балкона). Оборудован кроватью и диваном.</p>
+                        <p class = "rate">
+                            <span>1050 грн/ Сутки</span> 
+                        </p>
+                        <button type = "button" class = "btn">бронь</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+       <!-- single room -->
+<article class = "room">
+    <div class = "room-image">
+        <img src = "images/люкс 4-м с видом на море.jpg" alt = "room image">
+    </div>
+    <div class = "room-text">
+        <h3>Люкс</h3>
+        <p>Просторный четырёхместный номер на третьем этаже с балконом (вид на море).</p>
+                        <p class = "rate">
+                            <span>1100 грн/ Сутки</span> 
+                        </p>
+                        <button type = "button" class = "btn">бронь</button>
+                    </div>
+                </article>
+                <!-- end of single room -->     
+            </div>
+        </section>
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>Отзывы</h2>
+                </div>
+                <div class = "customers-container">
+       <!-- single customer -->
+       <div class = "customer">
+        <div class = "rating">
+            <span><i class = "fas fa-star"></i></span>
+            <span><i class = "fas fa-star"></i></span>
+            <span><i class = "fas fa-star"></i></span>
+            <span><i class = "fas fa-star"></i></span>
+            <span><i class = "far fa-star"></i></span>
+        </div>
+        <h3>Нам очень понравилось!</h3>
+        <p>Отдыхали в конце июня 2020г. 9 дней семьей из трех человек. Все очень понравилось. Все фото и описание отеля соответствует действительности. Условия проживания очень хорошие. Море близко. Во дворе много цветов. Все было СУПЕР!!!</p>
+        <img src = "images/cus3.jpg" alt = "customer image">
+        <span>Наталия, Ивано-Франковск</span>
+    </div>
+    <!-- end of single customer -->  
+    <!-- single customer -->
+    <div class = "customer">
+        <div class = "rating">
+            <span><i class = "fas fa-star"></i></span>
+            <span><i class = "fas fa-star"></i></span>
+            <span><i class = "fas fa-star"></i></span>
+            <span><i class = "fas fa-star"></i></span>
+            <span><i class = "far fa-star"></i></span>
+        </div>
+        <h3>Все было на высшем уровне.</h3>
+        <p>Огромное спасибо добрым, приветливым владельцам мини-отеля Дружба 598а. Они создают очень комфортный отдых и хорошее настроение гостям. Мы отлично отдохнули, зарядились энергией и положительными эмоциями.</p>
+        <img src = "images/cus2.jpg" alt = "customer image">
+        <span>Юлия, Винница</span>
+    </div>
+    <!-- end of single customer --> 
+    <!-- single customer -->
+    <div class = "customer">
+        <div class = "rating">
+            <span><i class = "fas fa-star"></i></span>
+            <span><i class = "fas fa-star"></i></span>
+            <span><i class = "fas fa-star"></i></span>
+            <span><i class = "fas fa-star"></i></span>
+            <span><i class = "far fa-star"></i></span>
+        </div>
+        <h3>Обязательно приедем в следующем году.</h3>
+        <p> Все удобства в номере. Выходя на балкон чувствуешь запах моря и вид очень радует глаз. Есть кухня со всем необходимым. Нам всё очень понравилось. Вы обретете приятные воспоминания.</p>
+        <img src = "images/cus1.jpg" alt = "customer image">
+        <span>Александр, Москва</span>
+    </div>
+    <!-- end of single customer -->  
+</div>
+</div>
+</section>
+<!-- end of body content --> 
+    <!-- footer -->
+    <footer class = "footer">
+        <div class = "footer-container">
+            <div>
+                <h2>О нас </h2>  
+                <p>Дружба 598а находится в частном секторе Солнечного района курорта Затока (ЖД станция «Дружба») и представляет собой комплекс из 2-х домов гостиничного типа (2-х этажный и 3-х этажный). Для отдыхающих предлагаются 2-х, 3-х и 4-х местные номера категорий «Люкс», «Стандарт» и «Комфорт». </p>          
+            </div>
+            <div>
+                <h2>Наши контакты</h2>
+                <div class = "contact-item">
+                    <span>
+                        <i class = "fas fa-map-marker-alt"></i>
+                    </span>
+                    <span>
+                        Затока, Солнечный район, ст. Дружба, участок №598а
+                    </span>
+                </div>
+                <div class = "contact-item">
+                    <span>
+                        <i class = "fas fa-phone-alt"></i>
+                    </span>
+                    <span>
+                        +38 (098) 218-28-99
+                    </span>
+                </div>
+                <div class = "contact-item">
+                    <span>
+                        <i class = "fas fa-envelope"></i>
+                    </span>
+                    <span>
+                        petro.medvedyuk@gmail.com
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer --> 
+    <script src="script.js"></script>    
+            </body>
+</html>
